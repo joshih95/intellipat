@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#this is a file to install httpd
+
+#first we will update our vm
+
+yum update
+
+#now we will use the package installer
+
+yum install httpd -y
+
+systemctl start httpd 
+
+systemctl enable httpd
+
